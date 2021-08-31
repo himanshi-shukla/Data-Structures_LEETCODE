@@ -1,0 +1,30 @@
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {TreeNode}
+ */
+var increasingBST = function(root) {
+    let head = new TreeNode('dummy'); //Create a new node with dummy data
+    let cur = head; // Create a current var assigned to the head of the linkelist
+   
+    // perform inorder -> left , root (store roots val in right) , right
+    function inorder (node){
+        if(!node) return;
+        inorder(node.left);
+        cur.right = new TreeNode(node.val);
+        cur = cur.right;
+        inorder(node.right);
+        
+    }
+    
+     inorder(root); // call inorder function
+    return head.right; //  return the list of values stored in the linked list
+    
+};
