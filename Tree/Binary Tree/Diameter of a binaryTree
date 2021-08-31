@@ -1,0 +1,26 @@
+
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number}
+ */
+
+ var foo = function(root){
+    if  (!root) return 0 ;
+      return Math.max(foo(root.left), foo(root.right)) + 1;
+  }
+  var diameterOfBinaryTree = function(root) {
+    if(!root)  return 0;
+      let base = foo(root.left) + foo(root.right);
+      let left = diameterOfBinaryTree(root.left);
+      let right = diameterOfBinaryTree(root.right);
+      return Math.max(left,base,right)
+      
+  };
