@@ -18,7 +18,7 @@ function FindingDuplicates(arr) {
     return outputArr;
 }
 
-let arr = [1, 2, 4, 6, 6, 6, 6, 7, 8, 9, 9, 10]
+let arr = [1, 2, 4, 6, 6, 6, 6, 7, 8, 9, 9, 10, 10]
 console.log("Original array", arr);
 
 console.log("Duplicates in the array", FindingDuplicates(arr));

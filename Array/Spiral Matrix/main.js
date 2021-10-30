@@ -4,7 +4,7 @@ function spiralOrder(matrix) {
     let col = matrix[0].length;
     let outputArray = [];
 
-
+    // refactoring required
     let left = 0;
     let right = col - 1;
     let top = 0;

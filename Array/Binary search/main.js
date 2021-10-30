@@ -20,6 +20,6 @@ function binSearch(arr, key) {
 }
 const arr = [-1, 0, 3, 5, 9, 10];
 const key = 9
-console.log("Array is", arr);
+console.log("Original Array is", arr);
 
 console.log("Kay element is found", binSearch(arr, key));
