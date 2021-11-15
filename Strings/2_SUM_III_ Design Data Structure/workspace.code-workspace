@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Data-Structures-and-Algorithms",
+			"path": "../../Data-Structures-and-Algorithms"
+		},
+		{
+			"name": "Strings",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Strings"
+	}
+}
