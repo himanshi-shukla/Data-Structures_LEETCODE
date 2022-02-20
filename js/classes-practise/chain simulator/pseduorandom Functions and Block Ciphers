@@ -1,0 +1,6 @@
+pseduorandom Functions and Block Ciphers
+
+f is a subset of the Function chosen uniformly at random.
+
+PRFs - F is a PRF if Fk is indistinguishable from uniform function f .
+even tougher for polynomial time
