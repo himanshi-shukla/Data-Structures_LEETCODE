@@ -1,0 +1,11 @@
+p {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    box-decoration-break: initial;
+    width: 620px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 10;
+
+}
